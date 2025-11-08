@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Question for Simbiat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Dear Oyekale Simbiat</h1>
+            <div class="message" id="initialMessage">
+                <p class="romantic-text">Dear Simbiat,</p>
+                <p class="romantic-text">Hope ur day is going well,just wanted to say something if you dont mind sharing giving me some of ur time , Every time I think of you, my heart skips a beat,it might sounds clingy but i have to say this</p>
+                <p class="romantic-text">I've been wanting to tell you something special...</p>
+                <div class="floating-hearts">❤️</div>
+                <button onclick="showQuestion()" class="btn pulse-btn">Open My Heart ❤️</button>
+            </div>
+            <div class="message hidden" id="questionMessage">
+                <p class="question">Will you be mine?</p>
+                <div class="buttons">
+                    <button onclick="handleYes()" class="btn yes-btn">Yes</button>
+                    <button onclick="handleNo()" class="btn no-btn" id="noBtn">No</button>
+                </div>
+            </div>
+            <div class="message hidden" id="question2">
+                <p class="question">Are you absolutely sure? Think about all our memories...</p>
+                <div class="buttons">
+                    <button onclick="handleYes()" class="btn yes-btn">Yes, I'll be yours</button>
+                    <button onclick="handleNo2()" class="btn no-btn">Still No</button>
+                </div>
+            </div>
+            <div class="message hidden" id="question3">
+                <p class="question">What if I promise to make you the happiest person?</p>
+                <div class="buttons">
+                    <button onclick="handleYes()" class="btn yes-btn">Okay, Yes!</button>
+                    <button onclick="handleNo3()" class="btn no-btn">Need more convincing</button>
+                </div>
+            </div>
+            <div class="message hidden" id="finalQuestion">
+                <p class="question">You know we're perfect together. One last chance?</p>
+                <p class="subtitle">(Hint: The answer is Yes 😊)</p>
+                <div class="buttons">
+                    <button onclick="handleYes()" class="btn yes-btn">Yes, finally!</button>
+                </div>
+            </div>
+            <div class="message hidden" id="yesMessage">
+                <p class="big-text">❤️Awnn.....Im so fucking happy  ❤️</p>
+                <div class="love-poem">
+                    <p>Thanks for accepting me into ur life😛🫣🫣🫣</p>
+                    <p>Your smile lights up my world</p>
+                    <p>You're the lady have been looking for .....im so fucking happy </p>
+                    <p>You're the missing piece to my puzzle</p>
+                    <p>My heart is forever yours</p>
+                    <p>Just remember foluto loves you(ur baby)</p>
+                </div>
+                <br>
+                <div class="timestamp">
+                    <p>On this special day:</p>
+                    <p id="dateDisplay"></p>
+                </div>
+                <p class="screenshot-text">📸 Screenshot this beautiful moment! 📸</p>
+                <div class="hearts">
+                    💖 💝 💖 💝 💖
+                </div>
+                <div class="final-message">
+                    <p>Thank you for saying YES!</p>
+                    <p class="signature">Forever Yours ❤️</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
